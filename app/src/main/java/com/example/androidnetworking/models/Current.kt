@@ -3,8 +3,8 @@ package com.example.androidnetworking.models
 data class Current(
     val lastUpdatedEpoch: Int,
     val lastUpdated: String,
-    val tempC: Double,
-    val tempF: Double,
+    val temp_c: Double,
+    val temp_f: Double,
     val isDay: Int,
     val condition: Condition,
     val windMph: Double,

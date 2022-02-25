@@ -14,7 +14,7 @@ object RetrofitBuilder {
 
 
     private fun getRetrofit(): Retrofit {
-        val authInterceptor = AuthInterceptor()
+
 
         val interceptor = HttpLoggingInterceptor()
         interceptor.level = when (BuildConfig.BUILD_TYPE) {
@@ -24,7 +24,6 @@ object RetrofitBuilder {
 
 
         val okHttp= OkHttpClient.Builder()
-            //.addInterceptor(authInterceptor)
             .addInterceptor(interceptor)
             .connectTimeout(15, TimeUnit.SECONDS)
             .readTimeout(15, TimeUnit.SECONDS)

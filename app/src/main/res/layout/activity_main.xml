@@ -1,17 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/coordinator_layout"
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar_layout" />
+
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_normal"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
-        <include
-            android:id="@+id/appBar"
-            layout="@layout/app_bar_layout" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:fontFamily="casual"
+                    android:padding="@dimen/margin_normal"
+                    android:text="Current Weather"
+                    android:textColor="@color/black" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:minWidth="0dp" />
+
+                <ImageView
+                    android:id="@+id/imageIcon"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_margin="@dimen/margin_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tempC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:padding="@dimen/margin_normal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_normal"
+                    tools:text="20.3" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:minWidth="0dp" />
+
+                <TextView
+                    android:id="@+id/tempF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_normal"
+                    tools:text="25.7" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-thin"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_normal"
+                    tools:text="Temp(C)" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:minWidth="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-thin"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_normal"
+                    tools:text="Temp(f)" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_small"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="normal"
+                tools:text="Cloudy" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
