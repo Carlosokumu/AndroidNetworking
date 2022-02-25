@@ -1,10 +1,11 @@
-package com.example.androidnetworking
+package com.example.androidnetworking.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.androidnetworking.R
+
 
 class MainActivity : AppCompatActivity() {
-
 
 
 

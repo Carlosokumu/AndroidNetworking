@@ -4,6 +4,7 @@ package com.example.androidnetworking.network
 
 
 data class ApiModel<out T>(val status: Status, val data: T?, val message: String?) {
+
     companion object {
         fun <T> success(data: T): ApiModel<T> = ApiModel(status = Status.SUCCESS, data = data, message = null)
 
