@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidNetworking</string>
+    <string name="city">City Name</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,9 +9,9 @@
 
 
         <include
-            android:id="@+id/app_bar_layout"
+            android:id="@+id/appBar"
             layout="@layout/app_bar_layout" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</layout>
+
