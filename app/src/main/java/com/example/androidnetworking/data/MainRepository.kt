@@ -12,5 +12,5 @@ class MainRepository(private val retrofit: RetrofitBuilder) {
 
 
 
-    suspend fun fetchCurrentWeather() = retrofit.apiService.getCurrentWeather()
+    suspend fun fetchCurrentWeather(cityName: String) = retrofit.apiService.getCurrentWeather(cityName = cityName)
 }
